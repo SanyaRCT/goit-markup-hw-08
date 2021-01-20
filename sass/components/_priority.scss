@@ -1,18 +1,15 @@
-.priority {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .priority-list {
-  display: flex;
+  display: block;
+  width: 100%;
 }
 
-.priority-list-item {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+.icon-prior {
+  margin-bottom: 30px;
+  padding: 25px 190px;
+  width: 100%;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .priority-title {
@@ -22,10 +19,12 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--special-black-color);
 }
+
 .priority-discription {
   font-family: var(--font-family);
   font-style: normal;
@@ -36,11 +35,63 @@
   color: #757575;
 }
 
-.icon-prior {
-  padding: 25px 100px;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .priority-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .priority-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .icon-prior {
+    margin-bottom: 30px;
+    padding: 25px 142px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+
+  .priority-list-item {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+.priority-title {
+  text-align: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .priority {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .priority-list {
+    display: flex;
+    margin: 0;
+  }
+
+  .priority-list-item {
+    width: 270px;
+    margin: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .icon-prior {
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }

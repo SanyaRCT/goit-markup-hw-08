@@ -55,7 +55,6 @@ address {
 .container {
   width: 100%;
   padding: 0 15px;
-  outline: 1px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
@@ -201,11 +200,15 @@ address {
   border-radius: 4px;
 }
 
-.hero {
-  margin-left: auto;
-  margin-right: auto;
+.hero-box {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mobil.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 118px 0;
-  background: #2f303a;
+  margin-bottom: 60px;
+  text-align: center;
+  display: block;
 }
 
 .hero-title {
@@ -219,11 +222,6 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.hero-box {
-  text-align: center;
-  display: block;
 }
 
 .hero-btn {
@@ -246,21 +244,53 @@ address {
   color: #ffffff;
 }
 
-.priority {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero-box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mobil@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tablet.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-box {
+    margin-bottom: 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg.jpg);
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.364;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg@2x.jpg);
+  }
 }
 
 .priority-list {
-  display: flex;
+  display: block;
+  width: 100%;
 }
 
-.priority-list-item {
-  width: 270px;
-}
-
-.priority-list-item:not(:last-child) {
-  margin-right: 30px;
+.icon-prior {
+  margin-bottom: 30px;
+  padding: 25px 190px;
+  width: 100%;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .priority-title {
@@ -270,6 +300,7 @@ address {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--special-black-color);
@@ -285,13 +316,61 @@ address {
   color: #757575;
 }
 
-.icon-prior {
-  padding: 25px 100px;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .priority-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .priority-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .icon-prior {
+    margin-bottom: 30px;
+    padding: 25px 142px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+  .priority-list-item {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.priority-title {
+  text-align: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .priority {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .priority-list {
+    display: flex;
+    margin: 0;
+  }
+  .priority-list-item {
+    width: 270px;
+    margin: 0;
+  }
+  .priority-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .icon-prior {
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }
 
 .work {
