@@ -1,54 +1,62 @@
-.work {
-  padding-bottom: 94px;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
-.work-title,
-.team-title,
-.clients-title {
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--special-black-color);
-}
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+  }
 
-.work-title {
-  margin-bottom: 50px;
-}
+  .work-title,
+  .team-title,
+  .clients-title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--special-black-color);
+  }
 
-.work-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .work-title {
+    margin-bottom: 50px;
+  }
 
-.work-list-item:not(:last-child) {
-  margin-right: 30px;
-}
+  .work-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.work-thumb {
-  position: relative;
-}
+  .work-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.work-img-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-bottom: 27px;
+  .work-thumb {
+    position: relative;
+  }
+
+  .work-img-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 }
