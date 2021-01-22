@@ -9,42 +9,54 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <header class="header header-port">
+    <header class="header">
         <div class="container">
-        <nav class="nav">
-            <a href="./index.html" lang="en" class="logo"><span class="span-logo">Web</span>Studio</a>
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a href="index.html" class="link-nav">Студия</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="portfolio.html" class="link-nav current">Портфолио</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="#contacts" class="link-nav">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <address class="address">
-            <ul class="list-address">
-                <li class="list-address-item">
-                    <a href="mailto:info@devstudio.com" class="address-link">
-                        <svg class="icon-add" width="16" height="20">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="list-address-item">
-                    <a href="tel:+380961111111" class="address-link">
-                        <svg class="icon-add" width="16" height="20">
-                            <use href="./images/sprite.svg#icon-vector"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </address>
+            <nav class="nav">
+                <a href="./index.html" lang="en" class="logo"><span class="span-logo">Web</span>Studio</a>
+                <button
+                type="button"
+                class="burger-btn"
+                data-menu-button
+                aria-expanded="true">
+                    <svg class="burger" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                        <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" data-menu>
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a href="index.html" class="link-nav">Студия</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="portfolio.html" class="link-nav current">Портфолио</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="#contacts" class="link-nav">Контакты</a>
+                        </li>
+                    </ul>
+                    <address class="address">
+                        <ul class="list-address">
+                            <li class="list-address-item">
+                                <a href="mailto:info@devstudio.com" class="address-link">
+                                    <svg class="icon-add" width="16" height="20">
+                                        <use href="./images/sprite.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="list-address-item">
+                                <a href="tel:+380961111111" class="address-link">
+                                    <svg class="icon-add" width="16" height="20">
+                                        <use href="./images/sprite.svg#icon-vector"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -262,5 +274,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/burger.js"></script>
 </body>
 </html>
