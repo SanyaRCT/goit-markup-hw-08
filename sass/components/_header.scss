@@ -152,6 +152,15 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
+  @media screen and (max-width: 1199px) {
+    .list-address-item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .address-link.mail {
+      padding-left: 2px;
+    }
+  }
 
   .burger-btn {
     display: none;
@@ -178,7 +187,7 @@
   }
 
   .link-nav {
-    padding-bottom: 28px;
+    padding-bottom: 33px;
 
     font-size: 14px;
     line-height: 1.143;

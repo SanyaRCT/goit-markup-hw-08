@@ -224,6 +224,18 @@ address {
     padding-top: 26px;
     padding-bottom: 26px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-address-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .address-link.mail {
+    padding-left: 2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
   }
@@ -244,7 +256,7 @@ address {
     margin-right: 50px;
   }
   .link-nav {
-    padding-bottom: 28px;
+    padding-bottom: 33px;
     font-size: 14px;
     line-height: 1.143;
   }
@@ -878,6 +890,7 @@ address {
 @media screen and (min-width: 768px) {
   .tablet {
     display: flex;
+    align-items: baseline;
     justify-content: center;
   }
   .address-box {
@@ -899,7 +912,6 @@ address {
     margin-right: 12px;
   }
   .tablet {
-    margin-right: 93px;
     align-items: baseline;
   }
   .address-box {
@@ -1099,6 +1111,9 @@ address {
     width: 370px;
     margin-left: var(--margin-card);
     margin-top: var(--margin-card);
+  }
+  .portfolio-hero-list {
+    margin-bottom: 50px;
   }
 }
 
