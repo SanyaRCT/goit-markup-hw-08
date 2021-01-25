@@ -542,13 +542,12 @@ address {
 }
 
 .team-title {
-  padding-bottom: 30px;
   text-align: center;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.179px;
+  line-height: 1.179;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -646,8 +645,12 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .team-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
   .team-list {
     display: flex;
@@ -1101,6 +1104,10 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
